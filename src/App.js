@@ -4,22 +4,24 @@ import {nanoid} from "nanoid"
 
 export default function App() {
     const allNewDice = () => {
-        let newDiceArray = []
+        const newDiceArray = []
         for (let i = 0; i < 10; i++) {
             newDiceArray.push({
                 value: Math.ceil(Math.random() * 6),
                 isHeld: false,
-                id: nanoid
+                id: nanoid()
             })
         }
         return newDiceArray
     }
 
-    const holdDice = (id) => {
-        console.log(id)
-    }
-
     const [dice, setDice] = useState(allNewDice())
+
+    const holdDice = (id) => {
+        setDice(oldDice => oldDice.map(die => {
+            return die.id === id ? {...die, isHeld: !die.isHeld} : die
+        }))
+    }
 
     const diceElements = dice.map(die => (
         <Die 
