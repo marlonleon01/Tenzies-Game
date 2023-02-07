@@ -81,7 +81,7 @@ main {
 .roll-dice-btn {
   background-color: #5035FF;
   color: #FFF;
-  margin-top: 3rem;
+  margin-top: 5rem;
   width: 12rem;
   height: 4.5rem;
   border-radius: 0.8rem;
@@ -123,8 +123,9 @@ main {
   }
 
   .roll-dice-btn {
-    width: 8rem;
-    height: 3.5rem;
-    margin-top: 1.5rem;
+    width: 7rem;
+    height: 3.2rem;
+    margin-top: 3rem;
+    font-size: 1.7rem;
   }
 }
