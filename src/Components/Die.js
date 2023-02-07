@@ -1,9 +1,7 @@
-import  "./Die.css"
-
 export default function Die(prop) {
     return (
-        <div>
-            <h2>{prop.value}</h2>
+        <div className="die-face">
+            <h2 className="die-num">{prop.value}</h2>
         </div>
     )
 }
