@@ -34,11 +34,23 @@ main {
   width: 40rem;
   height: 42rem;
   border-radius: 1rem;
-  padding:18rem 3rem 2rem 3rem;
+  padding: 4rem 3rem 2rem 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.title {
+  font-size: 40px;
+  margin: 0;
+}
+
+.instructions {
+  color: #4A4E74;
+  font-size: 1.5rem;
+  margin: 1.5rem 0 2rem 0;
+  text-align: center;
 }
 
 /* Dice */
@@ -79,4 +91,40 @@ main {
 
 .roll-dice-btn:active {
   box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
+
+
+/* Media Queries Phones */
+
+@media screen and (max-width: 550px) {
+  main {
+    width: 20rem;
+    height: 30rem;
+    border-radius: 1rem;
+    padding: 1rem;
+  }
+
+  .dice-container {
+    gap: 1.2rem;
+  }
+  
+  .instructions {
+    font-size: 1.2rem;
+  }
+
+  .die-face {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 0.2rem;
+  }
+
+  .die-num {
+    font-size: 1.8rem;
+  }
+
+  .roll-dice-btn {
+    width: 8rem;
+    height: 3.5rem;
+    margin-top: 1.5rem;
+  }
 }
