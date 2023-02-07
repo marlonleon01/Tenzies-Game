@@ -1,4 +1,4 @@
-import Die from "./Components/Die"
+import Die from "./Die"
 import {useState} from "react"
 
 
