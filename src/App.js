@@ -52,10 +52,11 @@ export default function App() {
         if (tenzies) {
             setDice(allNewDice())
             setTenzies(false)
+        } else {
+            setDice(oldDice => oldDice.map(die => {
+                return die.isHeld ? die : generateNewDie()
+            }))   
         }
-        setDice(oldDice => oldDice.map(die => {
-            return die.isHeld ? die : generateNewDie()
-        }))
     }
 
     return (
