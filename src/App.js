@@ -1,6 +1,16 @@
 import Die from "./Components/Die"
 
 export default function App() {
+    const allNewDice = () => {
+        let newDiceArray = []
+        for (let i = 0; i < 10; i++) {
+            newDiceArray.push(Math.ceil(Math.random() * 6))
+        }
+        return newDiceArray
+    }
+
+    allNewDice()
+    
     return (
         <main>
             <div className="dice-container">
@@ -38,5 +48,3 @@ export default function App() {
         </main>
     )
 }
-
-
