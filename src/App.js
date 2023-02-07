@@ -1,7 +1,6 @@
 import Die from "./Die"
-import {useState, useEffect} from "react"
+import {useState} from "react"
 import {nanoid} from "nanoid"
-import { node } from "prop-types"
 
 export default function App() {
     const allNewDice = () => {
@@ -18,7 +17,13 @@ export default function App() {
 
     const [dice, setDice] = useState(allNewDice())
 
-    const diceElements = dice.map(die => <Die value={die.value} key={die.id}/>)
+    const diceElements = dice.map(die => {
+        return <Die 
+                    value={die.value} 
+                    key={die.id}
+                    isHeld={die.isHeld}
+                />
+})
 
     const rollDice = () => {
         setDice(allNewDice())
