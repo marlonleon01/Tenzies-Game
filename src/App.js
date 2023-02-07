@@ -49,6 +49,10 @@ export default function App() {
     ))
 
     const rollDice = () => {
+        if (tenzies) {
+            setDice(allNewDice())
+            setTenzies(false)
+        }
         setDice(oldDice => oldDice.map(die => {
             return die.isHeld ? die : generateNewDie()
         }))
