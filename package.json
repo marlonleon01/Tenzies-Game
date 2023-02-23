@@ -1,6 +1,6 @@
 {
   "name": "tenzies-game",
-  "homepage": "tenzies-game.marlonleon.net",
+  "homepage": "https://tenzies-game.marlonleon.net/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
