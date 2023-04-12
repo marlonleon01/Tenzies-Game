@@ -1,7 +1,7 @@
 # Getting Started with Create React App
 
 ## Description
--I created this while follow the react basics course from scrimba   
+-I created this while following the react basics course from scrimba   
 -Its main purpose was to practice using state, useEffect, and conditional rendering
 
 ## Required Files
